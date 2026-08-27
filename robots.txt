@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+Disallow: /ua/thank-you.html
+
+Sitemap: https://vexta.site/sitemap.xml
