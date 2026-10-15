@@ -270,7 +270,7 @@
 
   .proto-tag{position:fixed; right:12px; bottom:calc(12px + env(safe-area-inset-bottom,0px)); z-index:70; background:linear-gradient(135deg,var(--navy),var(--steel)); color:#fff; font-size:.72rem; font-weight:700; letter-spacing:.04em; padding:8px 13px; border-radius:999px; box-shadow:var(--shadow); opacity:.95;}
 
-  /* --- live site: calendly + working links --- */
+  /* --- live site:  + working links --- */
   a.lang{text-decoration:none; cursor:pointer;}
   .cta .contacts a{color:#fff; text-decoration:none; border-bottom:1px solid transparent; transition:border-color .15s;}
   .cta .contacts a:hover{border-color:rgba(255,255,255,.55);}
@@ -583,7 +583,7 @@
       setTimeout(function(){ els.forEach(function(e){ e.classList.add('in'); }); }, 2600);
     }
     // --- Calendly --- Replace with your Calendly link / Замініть на ваш Calendly (one place):
-    var CALENDLY_URL='https://calendly.com/vexta-b2b/30min';
+    var CALENDLY_URL='https://calendly.com/hello-vexta/30min';
     function book(){ if(window.Calendly && Calendly.initPopupWidget){ Calendly.initPopupWidget({url:CALENDLY_URL}); } else { window.open(CALENDLY_URL,'_blank','noopener'); } return false; }
     [].slice.call(document.querySelectorAll('.js-book')).forEach(function(b){ b.addEventListener('click', function(e){ e.preventDefault(); book(); }); });
     var inline=document.getElementById('calInline');
