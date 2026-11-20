@@ -167,12 +167,12 @@
   @media (prefers-reduced-motion: reduce){ html.js .fl .flowdash,html.js .fl .hubring,html.js .fl .chg,html.js .fl .outgrp{animation:none; opacity:1; transform:none;} html.js .fl .hubring{opacity:0;} }
 
   /* stats strip */
-  .stats{position:relative; z-index:2; display:grid; grid-template-columns:repeat(4,1fr); gap:1px; margin-top:8px; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.12); border-radius:16px; overflow:hidden;}
+  .stats{position:relative; z-index:2; display:grid; grid-template-columns:repeat(3,1fr); gap:1px; margin-top:8px; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.12); border-radius:16px; overflow:hidden;}
   .stat{background:linear-gradient(180deg,rgba(13,25,48,.3),rgba(13,25,48,.05)); padding:20px 18px; text-align:left; transition:background .2s;}
   .stat:hover{background:rgba(255,255,255,.06);}
   .stat .n{font-family:var(--f-display); font-weight:800; font-size:clamp(1.5rem,3.4vw,2.1rem); line-height:1; font-variant-numeric:tabular-nums;}
   .stat .l{font-size:.8rem; color:var(--on-navy-soft); margin-top:7px; line-height:1.4;} .stat .l b{color:#cdd8ec; font-weight:600;}
-  @media (max-width:760px){ .stats{grid-template-columns:1fr 1fr;} }
+  @media (max-width:760px){ .stats{grid-template-columns:1fr 1fr;} .stat:last-child{grid-column:1/-1;} }
 
   /* reveal */
   .reveal{opacity:1; transform:none;}
@@ -383,7 +383,6 @@
       <div class="pill-row">
         <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>White-label, від вашого імені</span>
         <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>Гарантія на зустрічі</span>
-        <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>Старт за 7 днів</span>
       </div>
     </div>
 
@@ -450,7 +449,6 @@
     <div class="stats">
       <div class="stat"><div class="n silver">2-3</div><div class="l">зустрічі вже за період пілоту</div></div>
       <div class="stat"><div class="n silver">9+</div><div class="l">зустрічей за квартал, <b>гарантовано</b></div></div>
-      <div class="stat"><div class="n silver">7 днів</div><div class="l">до перших звернень після старту</div></div>
       <div class="stat"><div class="n silver">3</div><div class="l">канали<br><b>Email, LinkedIn, дзвінки</b></div></div>
     </div>
   </div>
@@ -574,7 +572,7 @@
     <div class="faq reveal">
       <details open><summary>Що таке «заброньована зустріч»?<span class="pm"></span></summary><p>Це коли людина, яка приймає рішення і підходить вам за профілем, підтвердила, що хоче поговорити, і зустріч уже стоїть у календарі. Не просто «цікаво, напишіть якось пізніше».</p></details>
       <details><summary>Ви справді працюєте від нашого імені?<span class="pm"></span></summary><p>Так. Усі повідомлення йдуть від вашої компанії і з вашого домену. Для клієнта це виглядає як ваша власна команда.</p></details>
-      <details><summary>Коли будуть перші результати?<span class="pm"></span></summary><p>Перші звернення підуть протягом тижня після старту. Перші зустрічі зазвичай з'являються на 3-6 тижні.</p></details>
+      <details><summary>Коли будуть перші результати?<span class="pm"></span></summary><p>Перші зустрічі зазвичай з'являються на 3-6 тижні.</p></details>
       <details><summary>А якщо зустрічей не буде?<span class="pm"></span></summary><p>На пілоті ми домовляємось про 2-3 зустрічі. На щомісячній роботі гарантуємо щонайменше 9 за квартал, інакше працюємо безкоштовно, доки не доведемо до цієї цифри.</p></details>
       <details><summary>Скільки це коштує?<span class="pm"></span></summary><p>Пілот $349. Далі пакети від $500 до $1200 на місяць плюс $75 за кожну заброньовану зустріч. Мінімум 3 місяці співпраці.</p></details>
     </div>

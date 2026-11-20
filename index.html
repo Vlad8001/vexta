@@ -167,12 +167,12 @@
   @media (prefers-reduced-motion: reduce){ html.js .fl .flowdash,html.js .fl .hubring,html.js .fl .chg,html.js .fl .outgrp{animation:none; opacity:1; transform:none;} html.js .fl .hubring{opacity:0;} }
 
   /* stats strip */
-  .stats{position:relative; z-index:2; display:grid; grid-template-columns:repeat(4,1fr); gap:1px; margin-top:8px; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.12); border-radius:16px; overflow:hidden;}
+  .stats{position:relative; z-index:2; display:grid; grid-template-columns:repeat(3,1fr); gap:1px; margin-top:8px; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.12); border-radius:16px; overflow:hidden;}
   .stat{background:linear-gradient(180deg,rgba(13,25,48,.3),rgba(13,25,48,.05)); padding:20px 18px; text-align:left; transition:background .2s;}
   .stat:hover{background:rgba(255,255,255,.06);}
   .stat .n{font-family:var(--f-display); font-weight:800; font-size:clamp(1.5rem,3.4vw,2.1rem); line-height:1; font-variant-numeric:tabular-nums;}
   .stat .l{font-size:.8rem; color:var(--on-navy-soft); margin-top:7px; line-height:1.4;} .stat .l b{color:#cdd8ec; font-weight:600;}
-  @media (max-width:760px){ .stats{grid-template-columns:1fr 1fr;} }
+  @media (max-width:760px){ .stats{grid-template-columns:1fr 1fr;} .stat:last-child{grid-column:1/-1;} }
 
   /* reveal */
   .reveal{opacity:1; transform:none;}
@@ -383,7 +383,6 @@
       <div class="pill-row">
         <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>White-label, under your name</span>
         <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>Meetings guaranteed</span>
-        <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>Launch in 7 days</span>
       </div>
     </div>
 
@@ -450,7 +449,6 @@
     <div class="stats">
       <div class="stat"><div class="n silver">2-3</div><div class="l">meetings during the pilot</div></div>
       <div class="stat"><div class="n silver">9+</div><div class="l">meetings per quarter, <b>guaranteed</b></div></div>
-      <div class="stat"><div class="n silver">7 days</div><div class="l">to first replies after launch</div></div>
       <div class="stat"><div class="n silver">3</div><div class="l">channels<br><b>Email, LinkedIn, calls</b></div></div>
     </div>
   </div>
@@ -574,7 +572,7 @@
     <div class="faq reveal">
       <details open><summary>What is a booked meeting?<span class="pm"></span></summary><p>It is when a decision maker who fits your profile has confirmed they want to talk, and the meeting is already in the calendar. Not a vague "sounds interesting, message me sometime".</p></details>
       <details><summary>Do you really work under our brand?<span class="pm"></span></summary><p>Yes. All messages go from your company and your own domain. To the client it looks like your in-house team.</p></details>
-      <details><summary>When do the first results come?<span class="pm"></span></summary><p>First replies start within a week of launch. First meetings usually appear in weeks 3-6.</p></details>
+      <details><summary>When do the first results come?<span class="pm"></span></summary><p>First meetings usually appear in weeks 3-6.</p></details>
       <details><summary>What if there are no meetings?<span class="pm"></span></summary><p>On the pilot we agree on 2-3 meetings. On monthly work we guarantee at least 9 per quarter, or we keep working for free until we reach that number.</p></details>
       <details><summary>How much does it cost?<span class="pm"></span></summary><p>The pilot is $349. Then packages from $500 to $1200 per month, plus $75 per booked meeting. Minimum 3 months.</p></details>
     </div>
